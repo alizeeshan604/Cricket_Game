@@ -27,7 +27,7 @@ public class GameController: MonoBehaviour
     {
 	    About.SetActive(false);
         StartButton.SetActive(false);
-	    //SceneManager.LoadScene("SampleScene");		
+	    SceneManager.LoadScene("GamePlay");		
     }
 
 }
