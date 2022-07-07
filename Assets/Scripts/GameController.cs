@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameController: MonoBehavior
+public class GameController: MonoBehaviour
 {
 	public GameObject About;
 	public GameObject StartButton;	
@@ -10,22 +11,22 @@ public class GameController: MonoBehavior
 
     void Start()
     {
-	    SetGameControllerReferenceForButtons();
+	    //SetGameControllerReferenceForButtons();
 	    About.SetActive(true);
         StartButton.SetActive(true);	
     }
 
-    void LoadAboutUs()
+    public void LoadAboutUs()
     {	
-	    About.SetActive("false");
-	    StartButton.SetActive("false");
+	    About.SetActive(false);
+	    StartButton.SetActive(false);
 	    SceneManager.LoadScene("AboutUs");
     }
 
-    void LoadMainGame()
+    public void LoadMainGame()
     {
-	    About.SetActive("false");
-        StartButton.SetActive("false");
+	    About.SetActive(false);
+        StartButton.SetActive(false);
 	    //SceneManager.LoadScene("SampleScene");		
     }
 
