@@ -727,6 +727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartButton
       objectReference: {fileID: 0}
+    - target: {fileID: 585307334688786183, guid: 2ea0b3d5be49f064fbaf12dc51ae5b48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea0b3d5be49f064fbaf12dc51ae5b48, type: 3}
 --- !u!1001 &6535522069247841913
@@ -739,6 +743,10 @@ PrefabInstance:
     - target: {fileID: 6535522067685843396, guid: dccee346ee24c1c459b34d473bde1eb1, type: 3}
       propertyPath: m_Name
       value: About
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535522067685843396, guid: dccee346ee24c1c459b34d473bde1eb1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6535522067685843399, guid: dccee346ee24c1c459b34d473bde1eb1, type: 3}
       propertyPath: m_Pivot.x

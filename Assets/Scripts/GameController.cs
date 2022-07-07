@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class GameController: MonoBehaviour
 {
 	public GameObject About;
-	public GameObject StartButton;	
-
+	public GameObject StartButton;
+    public GameObject BackButton;
 
     void Start()
     {
 	    //SetGameControllerReferenceForButtons();
 	    About.SetActive(true);
-        StartButton.SetActive(true);	
+        StartButton.SetActive(true);
+        BackButton.SetActive(true);
     }
 
     public void LoadAboutUs()
@@ -28,6 +29,14 @@ public class GameController: MonoBehaviour
 	    About.SetActive(false);
         StartButton.SetActive(false);
 	    SceneManager.LoadScene("GamePlay");		
+    }
+
+    public void GoBackToHomeScreen()
+    {
+        About.SetActive(true);
+        StartButton.SetActive(true);
+        BackButton.SetActive(false);
+        SceneManager.LoadScene("SampleScene");
     }
 
 }
