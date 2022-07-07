@@ -97,18 +97,18 @@ MonoBehaviour:
       y: 21
       width: 783
       height: 385
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 391.5, y: 192.5}
+    m_Scale: {x: 1.0609, y: 1.0609}
+    m_Translation: {x: 383.85345, y: 181.81567}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -391.5
-      y: -192.5
-      width: 783
-      height: 385
+      x: -361.8187
+      y: -171.37871
+      width: 738.0526
+      height: 362.89944
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 783, y: 406}
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 258
     height: 427
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 14590000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 88c3ffff16dafffffedaffff1edcffff70dcffffacdcffffc0ddffff08deffff78deffffe4deffffe2f9ffff765e0000805e0000b05e0000
+      m_SelectedIDs: 12aaffff
+      m_LastClickedID: -21998
+      m_ExpandedIDs: 8cabffffbeabffffecabffffe6adffff3aaeffff72beffff12c0ffff26c1ffff18c2ffff88c3ffff16dafffffedaffff1edcffff70dcffffacdcffffc0ddffff08deffff78deffffe4deffffe2f9ffff765e0000805e0000b05e0000a2630000fa630000e264000046650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 785
     height: 427
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 380.06796, y: 181.36525, z: -10.873611}
+    m_Target: {x: 391.5, y: 192.5, z: 0}
     speed: 2
-    m_Value: {x: 380.06796, y: 181.36525, z: -10.873611}
+    m_Value: {x: 391.5, y: 192.5, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -555,9 +555,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.005996696, y: 0.032993432, z: -0.00019796279, w: 0.9994376}
   m_Size:
-    m_Target: 179.78242
+    m_Target: 436.26654
     speed: 2
-    m_Value: 179.78242
+    m_Value: 436.26654
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -650,21 +650,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sprites
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sprites
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\My_Unity_Projects\Cricket_Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8580000
-    m_LastClickedID: 22776
+    scrollPos: {x: 0, y: 90.49988}
+    m_SelectedIDs: 1a590000
+    m_LastClickedID: 22810
     m_ExpandedIDs: 00000000ee58000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -718,8 +718,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 14590000
-    m_LastClickedInstanceID: 22804
+    m_SelectedInstanceIDs: 12aaffff
+    m_LastClickedInstanceID: -21998
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000000000001e590000
     m_RenameOverlay:
