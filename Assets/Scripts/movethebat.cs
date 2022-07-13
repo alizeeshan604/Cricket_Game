@@ -13,11 +13,17 @@ public class movethebat : MonoBehaviour
 
     void Update()
     {
+
+
+        int turnSpeed = 60;
+        int moveSpeed = 30;
         Vector3 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 direction = mousePosition - transform.position;
-        float targetAngle = Vector2.SignedAngle(Vector2.right, direction);
-        angle = Mathf.SmoothDampAngle(angle, targetAngle, ref currentVelocity, smoothTime, maxTurnSpeed);
-        transform.eulerAngles = new Vector3(0, 0, angle);
+        Vector2 direction = mousePosition - transform.position;
+        float angle = Vector2.SignedAngle(Vector2.right, direction);
+        Vector3 targetRotation = new Vector3(0, 0, angle);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), turnSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, mousePosition, moveSpeed * Time.deltaTime);
     }
-    
 }
+    
+
