@@ -15,6 +15,7 @@ public class BatMovement : MonoBehaviour
 
     void Start()
     {
+        //Debug.Log(target.position);
         Instantiate(batPrefab, target.position, Quaternion.identity);
     }
     
