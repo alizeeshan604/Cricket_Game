@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4483635442736953038}
   - component: {fileID: 4483635442736953039}
-  - component: {fileID: 4483635442736953043}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -85,17 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4483635442736953043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4483635442736953032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e43508f9ee49ca5448ec34746f116a30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4483635442736953038}
-  batPrefab: {fileID: 4483635442736953032}
