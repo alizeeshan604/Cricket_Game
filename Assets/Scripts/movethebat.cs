@@ -14,7 +14,7 @@ public class movethebat : MonoBehaviour
     void Update()
     {
 
-        if(In)
+        
         int turnSpeed = 60;
         int moveSpeed = 30;
         Vector3 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
