@@ -7,16 +7,20 @@ public class Move : MonoBehaviour
 {
     public Vector3 movementSpeed; //1
     public Space space; //2
+    private bool flag = true;
 
     void Update()
     {
-        transform.Translate(movementSpeed * Time.deltaTime, space);
-        
+        if (flag == true)
+        {
+            transform.Translate(movementSpeed * Time.deltaTime, space);
+        }
     }
-    private void OnTriggerEnter(Collider other)
+    public void changeflag()
     {
-        print("Hi");
+        flag = false;
     }
+    
     //public void OnCollisionEnter(Collision other)
     //{
     //    print("Here");

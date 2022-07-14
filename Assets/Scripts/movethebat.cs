@@ -5,6 +5,7 @@ using UnityEngine;
 public class movethebat : MonoBehaviour
 {
     public Transform mybat;
+    public Vector3 target;
     void Update()
     {
         if (Input.GetKeyDown("up"))
@@ -12,7 +13,7 @@ public class movethebat : MonoBehaviour
             int turnSpeed = 12000;
             Vector3 targetRotation = new Vector3(0, 0, 70);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), turnSpeed * Time.deltaTime);
-         }
+        }
 
         if (Input.GetKeyDown("down"))
         {
@@ -26,11 +27,16 @@ public class movethebat : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            print("Hi");
+            float force = 100;
+            Vector3 dir = target - transform.position;
+            //other.changeflag();
+            other.GetComponent<Move>().enabled = false;
+            other.GetComponent<Rigidbody2D>().velocity = dir.normalized * force;
+            
         }
     }
 
 
 }
-    
+
 
