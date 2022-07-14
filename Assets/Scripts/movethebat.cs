@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class movethebat : MonoBehaviour
 {
-    public Transform mybat;
+    //public Quaternion mybat;
     public Vector3 target;
-    void Update()
+    public BoxCollider2D sweetpoint;
+    public BoxCollider2D notsweet;
+
+
+    void LateUpdate()
     {
         if (Input.GetKeyDown("up"))
         {
@@ -18,21 +22,39 @@ public class movethebat : MonoBehaviour
         if (Input.GetKeyDown("down"))
         {
             int turnspeed2 = 12000;
-            Vector3 defaultlocation = new Vector3(0, 0, 5);
-            transform.rotation = Quaternion.RotateTowards(mybat.rotation, Quaternion.Euler(defaultlocation), turnspeed2 * Time.deltaTime); ;
+            Vector3 defaultlocation = new Vector3(0, 0, -30);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(defaultlocation), turnspeed2 * Time.deltaTime); 
+            //transform.position = mybat.position;
+            //transform.rotation = mybat.rotation;
         }
 
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ball"))
+        if (sweetpoint.IsTouching(other))
         {
-            float force = 100;
-            Vector3 dir = target - transform.position;
-            //other.changeflag();
-            other.GetComponent<Move>().enabled = false;
-            other.GetComponent<Rigidbody2D>().velocity = dir.normalized * force;
-            
+            if (other.CompareTag("Ball"))
+            {
+                float force = 300;
+                Vector3 dir = target - transform.position;
+                //other.changeflag();
+                other.GetComponent<Move>().enabled = false;
+                other.GetComponent<Rigidbody2D>().velocity = dir.normalized * force;
+
+            }
+        }
+        else if (notsweet.IsTouching(other))
+        {
+            if (other.CompareTag("Ball"))
+            {
+                float force = 50;
+                Vector3 dir = target - transform.position;
+                //other.changeflag();
+                other.GetComponent<Move>().enabled = false;
+                other.GetComponent<Rigidbody2D>().velocity = dir.normalized * force;
+
+            }
         }
     }
 

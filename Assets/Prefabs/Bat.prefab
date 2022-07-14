@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4483635442736953038}
   - component: {fileID: 4483635442736953039}
-  - component: {fileID: 8573938554381282305}
+  - component: {fileID: 6923971894801526247}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8573938554381282305
+--- !u!114 &6923971894801526247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,5 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f825f0441072344db252743091f419a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mybat: {fileID: 4483635442736953038}
+  mybat: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
+  sweetpoint: {fileID: 0}
