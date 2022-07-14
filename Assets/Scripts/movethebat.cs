@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class movethebat : MonoBehaviour
 {
-    public float maxTurnSpeed = 90;
-    public float smoothTime = 0.3f;
-    float angle;
-    float currentVelocity;
-    public Camera cam;
-
-
+    public Transform mybat;
     void Update()
     {
+        if (Input.GetKeyDown("up"))
+        {
+            int turnSpeed = 12000;
+            Vector3 targetRotation = new Vector3(0, 0, 70);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), turnSpeed * Time.deltaTime);
+         }
 
-        
-        int turnSpeed = 60;
-        int moveSpeed = 30;
-        Vector3 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = mousePosition - transform.position;
-        float angle = Vector2.SignedAngle(Vector2.right, direction);
-        Vector3 targetRotation = new Vector3(0, 0, 60);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), turnSpeed * Time.deltaTime);
-        //transform.position = Vector2.MoveTowards(transform.position, mousePosition, moveSpeed * Time.deltaTime);
+        if (Input.GetKeyDown("down"))
+        {
+            int turnspeed2 = 12000;
+            Vector3 defaultlocation = new Vector3(0, 0, 5);
+            transform.rotation = Quaternion.RotateTowards(mybat.rotation, Quaternion.Euler(defaultlocation), turnspeed2 * Time.deltaTime); ;
+        }
+
     }
+
+
 }
     
 
