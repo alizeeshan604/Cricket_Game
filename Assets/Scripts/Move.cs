@@ -9,7 +9,7 @@ public class Move : MonoBehaviour
 {
     public Vector3 movementSpeed; //1
     public Space space; //2
-    private bool flag = true;
+    //private bool flag = true;
    
   
     void Awake()
@@ -18,27 +18,16 @@ public class Move : MonoBehaviour
         movementSpeed.x = ran.Next(-130, -50);
     }
     void Update()
-    {
-        
-           
-            transform.Translate(movementSpeed * Time.deltaTime, space);
-    }
-    public void changeflag()
-    {
-        flag = false; 
+    {   
+         transform.Translate(movementSpeed * Time.deltaTime, space);
     }
     
-    //public void OnCollisionEnter(Collision other)
+    //public void changeflag()
     //{
-    //    print("Here");
-    //    // how much the character should be knocked back
-    //    var magnitude = 5000;
-    //    // calculate force vector
-    //    var force = transform.position - other.transform.position;
-    //    // normalize force vector to get direction only and trim magnitude
-    //    force.Normalize();
-    //    gameObject.GetComponent<Rigidbody2D>().AddForce(force * magnitude);
+    //    flag = false; 
     //}
+    
+    
 
 
 }

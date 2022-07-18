@@ -36,7 +36,7 @@ public class GameController: MonoBehaviour
         About.SetActive(true);
         StartButton.SetActive(true);
         BackButton.SetActive(false);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
 }
